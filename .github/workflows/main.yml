@@ -1,0 +1,17 @@
+name: Run Colab Notebook
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"  # Kører hvert 5. minut
+  workflow_dispatch:  # Tillader manuel kørsel
+
+jobs:
+  run_colab:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run Google Colab
+        run: |
+          curl -X POST "https://colab.research.google.com/drive/1RU24QXSrnlDrGVL9VJFkoul9edXdWd8b"
