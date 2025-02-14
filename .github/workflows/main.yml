@@ -14,4 +14,4 @@ jobs:
 
       - name: Run Google Colab
         run: |
-          curl -X POST "https://colab.research.google.com/drive/1RU24QXSrnlDrGVL9VJFkoul9edXdWd8b"
+          curl -L -X POST "https://colab.research.google.com/drive/1RU24QXSrnlDrGVL9VJFkoul9edXdWd8b?forceEdit=true&authuser=0&hl=en"
