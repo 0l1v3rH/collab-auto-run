@@ -2,7 +2,7 @@ name: Run Colab Notebook
 
 on:
   schedule:
-    - cron: "*/5 * * * *"  # Kører hvert 5. minut
+    - cron: "*/1 * * * *"  # Kører hvert 5. minut
   workflow_dispatch:  # Tillader manuel kørsel
 
 jobs:
